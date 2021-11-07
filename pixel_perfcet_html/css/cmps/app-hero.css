@@ -1,0 +1,28 @@
+.app-hero {
+    min-height: 600px;
+    background-color: rgba(71, 82, 82, 0.568);
+}
+.app-hero .left-content {
+    background-color: aquamarine;
+}
+
+.left-content .title {
+    font-size: 5rem;
+    max-width: 16ch;
+    line-height: 5.625rem;
+}
+.app-hero .right-content {
+}
+
+/* MOBILE  */
+@media (max-width: 450px) {
+    .app-hero {
+        flex-direction: column;
+    }
+    .left-content .title {
+        max-width: 30ch;
+        font-size: 42px;
+        line-height: 48px;
+        text-align: center;
+    }
+}

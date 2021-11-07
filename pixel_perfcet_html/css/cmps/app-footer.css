@@ -1,0 +1,14 @@
+.app-footer {
+    background-color: #232127;
+    min-height: 310px;
+    padding-block: 70px;
+    color: white;
+}
+.footer-container{
+    align-items: center;
+}
+@media (max-width: 450px) {
+    .footer-container {
+        flex-direction: column;
+    }
+}

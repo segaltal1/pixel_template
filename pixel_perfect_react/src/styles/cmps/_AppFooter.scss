@@ -1,0 +1,32 @@
+.app-footer {
+    background-color: #232127;
+    min-height: 310px;
+    padding-block: 70px;
+    .footer-container {
+        @include for-mobile-layout {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+    img {
+        filter: brightness(0) invert(1);
+    }
+    .links {
+        gap: 13px;
+        @include for-mobile-layout {
+            justify-content: center;
+            align-items: center;
+        }
+        span {
+            color: #bfbfbf;
+            &.title {
+                color: white;
+                padding-bottom: 12px;
+            }
+        }
+    }
+    .icons {
+        gap: 25px;
+    }
+}

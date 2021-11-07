@@ -1,0 +1,18 @@
+.app-start {
+    height: 250px;
+    background-color: rgba(203, 203, 255, 0.658);
+    /* background-image: url("../../img/logo.svg"); */
+}
+.app-start h2 {
+    color: #333;
+}
+.app-start .start-btn {
+    font-size: 1.25rem;
+    background-color: lightblue;
+    color: white;
+    border-radius: 28px;
+    padding: 0.8rem 2.6rem;
+}
+.app-start .start-btn:hover {
+    background-color: lightseagreen;
+}

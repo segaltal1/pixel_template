@@ -1,0 +1,26 @@
+.app-hero {
+    min-height: 600px;
+    background-color: rgba(71, 82, 82, 0.568);
+    @include for-mobile-layout {
+        flex-direction: column;
+    }
+    .left-content {
+        background-color: aquamarine;
+        .title {
+            font-size: 5rem;
+            max-width: 16ch;
+            color: $clr1;
+            line-height: 5.625rem;
+            @include for-mobile-layout {
+                max-width: 30ch;
+                font-size: 42px;
+                line-height: 48px;
+                text-align: center;
+            }
+        }
+        
+    }
+    .right-content {
+    
+    }
+}

@@ -1,0 +1,44 @@
+.app-filter {
+    background-color: $clr2;
+    padding: 3.25rem 4rem;
+    border-radius: 10px;
+    transform: translateY(50%);
+    width: 100%;
+    gap: 1.5rem;
+    // background-image: url("../../assets/img/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
+    @include for-mobile-layout {
+        flex-direction: column;
+        background-position: right top;  
+        // background-image: url("../../assets/img/bg-shorten-mobile.svg");
+    }
+    input {
+        border-radius: 10px;
+        height: 64px;
+        flex: 1;
+        padding-inline: 2rem;
+        &::placeholder {
+            font-size: 20px;
+        }
+        @include for-mobile-layout {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+    button {
+        background-color: $clr6;
+        border-radius: 10px;
+        color: white;
+        text-align: left;
+        padding: 1rem 2.7rem;
+        font-size: 1.25rem;
+        &:hover {
+            background-color: lighten($clr6, 10);
+        }
+        @include for-mobile-layout {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+

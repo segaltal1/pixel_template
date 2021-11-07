@@ -1,0 +1,25 @@
+.app-main {
+    min-height: 900px;
+    background-color: rgba(95, 158, 160, 0.63);
+    padding-top: 200px;
+    .app-main-content {
+        .main-header {
+            padding-bottom: 65px;
+            .title {
+                font-size: 2.5rem;
+                // font-style: poppins-bold;
+                color: $clr1;
+            }
+        }
+        .cards-container {
+            gap: 1.875rem;
+            min-height: 400px;
+            @include for-mobile-layout {
+                flex-direction: column;
+            }
+
+            .card {
+            }
+        }
+    }
+}

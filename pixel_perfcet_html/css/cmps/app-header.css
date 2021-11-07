@@ -1,0 +1,56 @@
+.app-header {
+    background-color: rgba(0, 255, 255, 0.425);
+    padding-top: 3rem;
+    position: relative;
+}
+.app-header .menu-btn {
+    font-size: 2rem;
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+.logo {
+    padding-inline-end: 3rem;
+}
+
+.logo img {
+    width: unset;
+}
+nav {
+    justify-content: space-between;
+    width: 100%;
+}
+nav a {
+    cursor: pointer;
+    font-size: 1.125rem;
+    padding: 1rem;
+}
+
+/* MOBILE */
+@media (max-width: 450px) {
+    .app-header .menu-btn {
+        display: block;
+    }
+    nav {
+        width: 60%;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        background-color: wheat;
+        padding-top: 5.4rem;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: 0.3s ease-in;
+    }
+    nav.open {
+        transform: translateX(0);
+        z-index: 2;
+    }
+    .right-nav,
+    .left-nav {
+        flex-direction: column;
+    }
+}

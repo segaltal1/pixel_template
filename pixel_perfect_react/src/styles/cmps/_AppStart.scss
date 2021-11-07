@@ -1,0 +1,18 @@
+.app-start {
+    height: 250px;
+    background-color: $clr2;
+    // background-image: url("../../assets/img/bg-boost-desktop.svg");
+    h2 {
+        color: white;
+    }
+    .start-btn {
+        font-size: 1.25rem;
+        background-color: $clr6;
+        color: white;
+        border-radius: 28px;
+        padding: 0.8rem 2.6rem;
+        &:hover {
+            background-color: lighten($clr6 ,10);
+        }
+    }
+}

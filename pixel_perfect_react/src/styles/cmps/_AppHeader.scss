@@ -1,0 +1,52 @@
+.app-header {
+    padding-top: 48px;
+    gap: 2.625rem;
+    @include for-mobile-layout {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        @include for-mobile-layout {
+            flex-direction: column;
+            background-color: $clr2;
+            border-radius: 10px;
+            padding: 40px 24px;
+            gap: 2rem;
+            display: none;
+            &.open{
+                display: block;
+            }
+        }
+        .left-nav,
+        .right-nav {
+            gap: 2.625rem;
+            @include for-mobile-layout {
+                flex-direction: column;
+            }
+        }
+
+        a {
+            font-size: 0.9375rem;
+            color: $clr4;
+        }
+    }
+    
+    .logo {
+        @include for-mobile-layout {
+            width: 100%;
+            img {
+                max-width: 120px;
+            }
+        }
+    }
+
+    .menu-btn {
+        display: none;
+        font-size: 1.5rem;
+        color: $clr4;
+        @include for-mobile-layout {
+            display: block;
+        }
+    }
+}
